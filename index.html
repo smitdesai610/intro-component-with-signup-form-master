@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="./scss/main.css">
+  
+  <title>Intro-sign up form</title>
+</head>
+<body>
+  <div class="main">
+    <div class="item1">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</p>
+    </div>
+    <div class="item2">
+      <div class="free-try">
+        <p>
+          <span class="free-days">Try it free 7 days</span><span class="thereafter"> then $20/mo. thereafter</span>
+        </p>
+      </div>
+      <form class="claim-trial">
+        <div class="input-field">
+          <input class="input-type" type="text" id="fname" placeholder="First Name">
+          <div class="error-icon">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>       
+          </div>
+          <p class="error-message">First Name cannot be empty</p>
+        </div>
+        <div class="input-field">
+          <input class="input-type" type="text" id="lname" placeholder="Last Name">
+          <div class="error-icon">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>       
+          </div>
+          <p class="error-message">Last Name cannot be empty</p>
+        </div>
+        <div class="input-field">
+          <input class="input-type" type="email" id="email" placeholder="Email Address">
+          <div class="error-icon">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>       
+          </div>
+          <p class="error-message">Looks like this is not an email</p>
+        </div>
+        <div class="input-field">
+          <input class="input-type" type="password" id="password" placeholder="Password">
+          <span class="show-password-button" onclick="togglePasswordVisibility()"><i class="fas fa-eye"></i></span>
+          <div class="error-icon">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#FF7979" cx="12" cy="12" r="12"/><rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1"/><rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/></g></svg>       
+          </div>
+          <p class="error-message">Password cannot be empty</p>
+        </div>   
+        <button class="btn">Claim Your Free Trial</button>
+        <span class="agreeing">By clicking the button, you are agreeing to our <span class="terms"> Terms and Services</span></span>
+      </form>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
